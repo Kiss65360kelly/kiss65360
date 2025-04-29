@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-List</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="todolist.html">TO-DO LIST</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="profile.html"> USER PROFILE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!-- about us content -->
+     <section class="about-us">
+        <div class="column">
+            <div class="about-col">
+                <p>Welcome to our TO-DO-LIST application! Our mission is 
+                to help you stay organised and boost your productivity</p>
+            </div>
+        
+                <section class="keyf">
+                    <h1>Key Features</h1>
+                    <p>This site brings you the following Features:  </p>
+            
+                    <div class="row">
+                        <div class="features-col">
+                            <h3>Task Management</h3>
+                            <p> Effotlessly Add,Edit, and Delete tasks with just a few clicks.</p>
+                        </div>
+                        <div class="features-col">
+                            <h3>Prioritizing</h3>
+                            <p>Organise your tasks by priority to focus on what matters 
+                                most such as marking tasks as high,medium, or low priority </p>
+                        </div>
+                        <div class="features-col">
+                            <h3>Notification and User-Friendly Design</h3>
+                            <p>Stay on top of your datelines with customizable Notifications and also experience a clean, 
+                                modern interface designed for simplicity and efficiency</p>
+                        </div>
+                    </div>
+                    <div class="features-col">
+                        <h3>Collaboration</h3>
+                        <p>Work together with friends,family, or colleages by sharing tasks and projects</p>
+                    </div>
+                    
+                </section>   
+        </div>
+     </section>
+     <section class="keyfun">
+    
+        <div class="row">
+            <div class="features-col">
+                <h3>OUR STORY</h3>
+                <p> Our journey began when we realised the need for a simple yet effective task management tool </p>
+            </div>
+            <div class="features-col">
+                <h3>OUR VISION</h3>
+                <p>To empower individuals to take control of their tasks and enhance their productivity. </p>
+            </div>
+            <div class="features-col">
+                <h3>OUR MISSION</h3>
+                <p>To provide a reliable, easy-to use tool for task management that adapts to the needs of our users</p>
+            </div>
+        </div>
+        
+     </section>
+     <div class="abt-col">
+        <p>Join us today and start organizing your life!</p>
+        <a href="todolist.html" class="hero-btn red-btn">EXPLORE NOW</a>
+    </div>
+     <!----javascript for toggle menu--->
+     <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right="0"  
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px"  
+        }
+    </script>
+     <!-- footer -->
+      <!-- for drop down menu--><br>
+      <h3>Please rate our service</h3>
+       <center><select name="feedback"id=""></center>
+        <option value="5">Excellent</option>
+        <option value="4">Very Good</option>
+        <option value="3">Good</option>
+        <option value="2">Fair</option>
+        <option value="1">Very Poor</option>
+       </select>
+     <section class="footer">
+        <p>Privacy policy,terms of service, follow us on git hub,whatsapp,Facebook</p>
+             <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-git hub"></i>
+                <i class="fa-brands fa-linkedin"></i>
+             </div>
+             <p>All Right Reserves<i class="fa-regular fa-heart"></i></i> 2025</p>         
+             
+</body>
+</html>

@@ -1,0 +1,141 @@
+                                                                                                                                                                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="todolist.html">TO-DO LIST</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="profile.html"> USER PROFILE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1><marquee> Welcome to your productivity Hub!</marquee> </h1>
+            <blockquote>"The secret of getting ahead is getting started." - Mark Twain</blockquote>
+            <p>At your TO-DO LIST website,we believe that every great achievement begins with a single step.
+                 <br> Our goal is to help you organise your tasks,conquer your goals, and stay on top of your respnsibilities. 
+                 <br> Whether it's daily chores, work projects, or personal aspirations, our intuitive TO-DO LIST is 
+                 <br>here to simplify your life and boost your productivity. </p>
+                <h2>Start your journey towards a more organised and fulfilling life today. </h2>
+               
+             <a href="about.html" class="hero-btn">Visit Us To Know More</a>
+         </div>
+             </section>
+              <!----javascript for toggle menu--->
+              <script>
+                 var navLinks = document.getElementById("navLinks")
+                 function showMenu(){
+                     navLinks.style.right="0"  
+                 }
+                 function hideMenu(){
+                     navLinks.style.right="-200px"  
+                 }
+             </script>
+              <section class="keyf">
+                <h1>Key Features</h1>
+                <p>This site brings you the following Features:  </p>
+        
+                <div class="row">
+                    <div class="features-col">
+                        <h3>Task Management</h3>
+                        <p> Effotlessly Add,Edit, and Delete tasks with just a few clicks.</p>
+                    </div>
+                    <div class="features-col">
+                        <h3>Prioritizing</h3>
+                        <p>Organise your tasks by priority to focus on what matters 
+                            most such as marking tasks as high,medium, or low priority </p>
+                    </div>
+                    <div class="features-col">
+                        <h3>Notification and User-Friendly Design</h3>
+                        <p>Stay on top of your datelines with customizable Notifications and also experience a clean, 
+                            modern interface designed for simplicity and efficiency</p>
+                    </div>
+                </div>
+                
+                    <div class="features-col">
+                        <h3>Collaboration</h3>
+                        <p>Work together with friends,family, or colleages by sharing tasks and projects</p>
+                    </div>
+                
+            </section>
+            <section class="explore">
+                <h1>Explore Our Pages</h1>
+                <div class="row">
+                    <div class="explore-col">
+                        <h3>To-Do List</h3>
+                        <p> Manage your task efficiently and stay organized</p>
+                        <a href="todolist.html" class="my-btn">Go to TO-DO-LIST</a>
+                    </div>
+                    <div class="explore-col">
+                        <h3>About Us</h3>
+                        <p>Learn more about our mission and vission</p>
+                        <a href="about.html" class="my-btn">Read More</a>
+                    </div>
+                    <div class="explore-col">
+                        <h3>Help & Support</h3>
+                        <p>Find answers to your questions and get assisted</p>
+                        <a href="help.html" class="my-btn">Get Help</a>
+                    </div>
+                    <div class="explore-col">
+                        <h3>Contact Us</h3>
+                        <p>Reach out for feedback or support</p>
+                        <a href="contact.html" class="my-btn">Contact Us</a>
+                    </div>
+                    <H3></H3>
+                </div>
+            </section>
+            <section class="testimonials">
+                <h1>What Our Users Say</h1>
+                <p>Feedback from our users around the globe.</p>
+            
+                <div class="row">
+                    <div class="testimonial-col">
+                        <img src="IMG_20231202_154116_476~2.jpg">
+                        <div>
+                            <p>"This app has changed the way i manage my tasks"</p>
+                                  <h3>Angel</h3>
+                        </div>
+                        </div>
+                        <div class="testimonial-col">
+                            <img src="20231206_134315.jpg">
+                            <div>
+                                <p>"I love how easy it is to stay organised</p>
+                                      <h3>Tiahno</h3>
+                            </div>
+                    </div>
+            </section>
+            <!-- call to action -->
+            <section class="cta">
+                <h1>Start managing yout tasks today</h1>
+                <a href="todolist.html"class="hero-btn" >Get Started</a>
+               </section>
+               <!-- footer -->
+            <section class="footer">
+                <h4>About Us</h4>
+                <p>Privacy policy,terms of service, follow us on twitter,IG,Facebook</p>
+                     <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                     </div>
+                     <p>All Right Reserved <i class="fa-regular fa-heart"></i></i> 2025</p>
+            </section>
+            </body>
+            </html> 
+</body>
+</html>

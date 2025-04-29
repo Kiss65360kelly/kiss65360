@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-List</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="todolist.html">TO-DO LIST</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="profile.html"> USER PROFILE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1> Help Center</h1>
+        <h3 style="color: beige;">Your resources for support and information</h3>
+    </section>
+    <!----javascript for toggle menu--->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right="0"  
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px"  
+        }
+    </script>
+    <!-- about us content -->
+    <section class="help">
+        <div class="search-box">
+            <form action="https://www.google.com/search" method="get" style="background: none; height: auto;box-shadow: none;">
+                <input type="text" id="help" placeholder="Search for help..." name="q" style="width: 600px;padding: 0;border-radius: 0;border: 1px solid black;text-align: left;">
+                <button type="submit">Search</button> 
+            </form>
+        </div>
+        <div class="categories">
+            <h3>categories</h3>
+            <p></a>Creating Tasks</p>
+            <p>Managing your To-Do List</p>
+            <p>Setting Reminders</p>
+            <p>Sharing lists with others</p>
+            <p>Intergrating with calender apps</p>
+            <p>TroubleShooting Sync Issues</p>
+
+        </div>
+        <br><br>
+        <div class="categories">
+            <h3>Frequently asked questions</h3>
+            <p><a href="https://www.google.com/search?q=How+do+i+reset+my+password%3F">How do i reset my password?</a></p>
+            <p><a href="https://www.google.com/search?q=Can+i+recover+delete+tasks%3F">Can i recover delete tasks?</a></p>
+            <p><a href="https://www.google.com/search?q=How+do+i+change+my+email+address%3F">How do i change my email address?</a></p>
+            <p><a href="https://www.google.com/search?q=What+should+i+do+if+the+app+crashes">What should i do if the app crashes</a></p>
+
+        </div>
+        <div class="categories">
+            <h3>Contact Support</h3>
+            <p>If you need any further assistance you can reach us at:</p>
+            <p><b>Email: brightkelly130@gmail.com</b> </p>
+            <p><b>Phone: 653609026</b></p>
+
+        </div>
+         <!-- footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Privacy policy, terms of service,  follow us on Linkedin, github,  Facebook</p>
+             <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+             </div>
+             <p>All Right Reserved <i class="fa-regular fa-heart"></i></i> 2025</p>   
+             <script src="project1.js"></script>   
+                
+          </body>
+    </html>

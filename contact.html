@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-List</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="todolist.html">TO-DO LIST</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="profile.html"> USER PROFILE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1> Contact Us</h1>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+              <div class="contact-col">
+                  <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                      <h5>Hibmat street adjacent to mayor street, Campus B</h5>
+                      <p>Buea,Molyko</p>
+                   </span>
+                  </div>
+                  <div>
+                      <i class="fa fa-phone"></i>
+                      <span>
+                        <h5>+237 653 60 90 26</h5>
+                        <p>Monday to Saturday, 8am to 6pm</p>
+                     </span>
+                  </div> 
+                  <div>
+                      <i class="fa fa-envelope"></i>
+                      <span>
+                        <h5>brightkelly130@gmail.com</h5>
+                        <p>Email us</p>
+                     </span>
+                  </div>   
+                  </div>
+              </div>
+              <div class="contact-col">
+                <form action ="https://api.web3forms.com/submit" method="post"> 
+                    <input type="hidden" name="access_key" value="d68f668f-fc86-44b4-822f-c81ebb71c9d1">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your Email Address" required>
+                    <textarea name="message" id="" rows="8" placeholder="Message"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form>
+                </div>
+          </div>
+        </section>
+        
+             <!----javascript for toggle menu--->
+             <script>
+                var navLinks = document.getElementById("navLinks")
+                function showMenu(){
+                    navLinks.style.right="0"  
+                }
+                function hideMenu(){
+                    navLinks.style.right="-200px"  
+                }
+            </script>
+            <!-- footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Privacy policy,terms of service, follow us on linkedin, github, facebook</p>
+             <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+             </div>
+             <p>All right Reserved<i class="fa-regular fa-heart"></i></i> 2025</p>   
+             <script src="project1.js"></script>   
+                
+             </body>
+</html>
